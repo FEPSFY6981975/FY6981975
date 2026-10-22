@@ -41,9 +41,9 @@
   </style>
   <body style="background-color:#FFFFFF; margin-left:50px;">
   <hr>
-      <h3 id="Abstract"> Abstract </h3>
+      <h3 id="Abstract_Title"> Abstract </h3>
   </hr>
-  <p class="ex1">
+  <p id="Abstract_Text">
       <pre>
         This is where my abstract will go!
       </pre>
@@ -52,7 +52,7 @@
   <hr>
     <h3 id="Introduction"> Introduction to the paper </h3>
   </hr>
- <p class="ex1">
+ <p id="Intro_Text">
       <pre>
         In 2015, an international organisation composed of 193 member states, named United Nations, agreed upon 17 Sustainable Development Goals (SDGs for short) Agenda to work towards for 2030 (https://www.un.org/en/about-us ). 
         The purpose of these goals was to improve living & environmental quality globally, the approach of tackling 17 goals at once was done to acknowledge that many global issues go hand in hand e.g. armed conflicts and resource insecurity.  
@@ -66,18 +66,18 @@
   </p>
 
   <hr>
-    <h3 id="Main_Text"> Main body of the paper </h3>
+    <h3 id="Main_Para_Title"> Main body of the paper </h3>
   </hr>
- <p class="ex1">
+ <p id="Main_Text">
       <pre>
         This is where my paper's results, tables and main text will go!
       </pre>
   </p>
 
   <hr>
-    <h3 id="Conclusion"> Conclusion of the paper </h3>
+    <h3 id="Conclusion_Title"> Conclusion of the paper </h3>
   </hr>
- <p class="ex1">
+ <p id="Conclusion_Text">
       <pre>
         This is where my paper's conclusion will go!
       </pre>
@@ -168,10 +168,10 @@
     // Function to calculate and display total word count from selected sections
     function displayTotalWordCount() {
       // Calculate word count for each section and accumulate the total
-      const AbstractCount = displayWordCount("Abstract");
-      const IntroductionCount = displayWordCount("Introduction");
+      const AbstractCount = displayWordCount("Abstract_Text");
+      const IntroductionCount = displayWordCount("Intro_Text");
       const AnalysisCount = displayWordCount("Main_Text");
-      const ConclusionCount = displayWordCount("Conclusion");
+      const ConclusionCount = displayWordCount("Conclusion_Text");
       // Calculate the sum of all selected sections
       const totalWordCount = AbstractCount + IntroductionCount + AnalysisCount + ConclusionCount;
       // Display the total word count
