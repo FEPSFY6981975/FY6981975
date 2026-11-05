@@ -51,14 +51,14 @@
 <p class="main_text"> 
   Use of nanotech has also opened new opportunities for precision-based agriculture (using tech to optimise crop productions & resource management). <b>Saranyadevi et al's 2025</b> study highlights how nanomaterials & nano-enabled tools transform plant genome (the entire genetic material of an organism: from <a href="https://www.bbc.co.uk/bitesize/guides/zys2v9q/revision/1">BBC Bitesize - What is the genome and what does it do?</a>) editing & environmental genomics (<a href="https://genomicsdb.net/environmental-genomics.html">“a subfield of genomics that studies the genetic makeup and functional responses of microorganisms in their environment”</a>). Scientists are hopeful that the use of nanomaterials will become more sustainable and safer through future innovation. Management of plant diseases and encouragement of crop protection contributes to better crop yields so may improve food security, health and local ecosystems. This contributes towards SDG 2 (zero hunger), 3 (Good Health and Well Being) & 15 (Life on Land).
 </p>
-<p class="main_text">  <!-- SUB TITLE: NANOTECH'S EFFECT ON CONTAMINATED WATER REMEDIATION-->
+<p class="Main_Text">  <!-- SUB TITLE: NANOTECH'S EFFECT ON CONTAMINATED WATER REMEDIATION-->
   The presence of heavy metals in water systems is an increasing and serious global threat to both the environment and public health. <b>Hama et al.'s 2026</b> study discusses the combination of nanotech and bioremediation technologies (?) to combat and reverse this issue. The natural properties of bacteria, fungi & algae allow them to pull out & detoxify metal pollutants in water. Engineered nanomaterials were used, ones that increase microbial viability and metal uptake and bio-nano hybrids which have an exceptionally strong synergism. It was found that the use of this system effectively remediated contaminants to nearly the same extent as conventional systems. The combination of microorganisms & nanoscience provides an environmentally responsible way to remediate contaminated water. This directly contributes towards SDG 6 (clean water & sanitation), 10 (reducing inequality within countries as poorer people have better access to sanitation, clean drinking water etc), 11 (sustainable cities and communities as water treatment is more env. Sustainable so less waste), 12 (responsible consumption & production, as contaminated water is resp. treated) & 14 (life below water, less pollutants reach rivers/oceans which protects aquatic life).
 </p>
 
   <hr>
     <h2 id="Conclusion_Title"> Conclusion of the paper </h2>
   </hr>
- <p id="Conclusion_Text">  <!-- Main points: Nanotech is a very sustainable and promising technology, further innovation can lead to lots of good. Already has potential to overtake current systems if all goes well. New tech however, so skepticism follows. Have to wait and see. Likely wont be implemented in full force before 2030, so after the SDG goals expire -->
+ <p id="Conc_Text">  <!-- Main points: Nanotech is a very sustainable and promising technology, further innovation can lead to lots of good. Already has potential to overtake current systems if all goes well. New tech however, so skepticism follows. Have to wait and see. Likely wont be implemented in full force before 2030, so after the SDG goals expire -->
 As explored through the multiple studies, nanotechnology has presented itself as a promising, sustainable alternative to many systems currently put in place for processes such as waste management, unsafe water treatment and rearing healthy crops. In its relative infancy it has been proven to make an impact on these mentioned areas and therefore contribute to reaching many of the UN's SDG goals. However, since it is a new technology it requires much more testing to be deemed safe enough to be implemented in full force across the globe. Its effects on peoples' health has not been tracked long term, so it could have negative side effects for many. Developments in the Nanotech field will likely take over 4 years, going past 2030 and therefore past the period when the SDGS were to be met by. Therefore it is unlikely that nanotechnology will contribute heavily towards meeting the SDGS before 2030, as many scientists are skeptical of using it on the masses. But it can be said that it had a minor role in contributing towards the UN's SDGS.
   </p>
     
@@ -222,14 +222,14 @@ As explored through the multiple studies, nanotechnology has presented itself as
       const AbCount = displayWordCount("Abstract_Text");
       const IntroCount = displayWordCount("Intro_Text");
       const AnCount = displayWordCount("Main_Text");
-      const ConcCount = displayWordCount("Conclusion_Text");
+      const ConcCount = displayWordCount("Conc_Text");
       // Calculate the sum of all selected sections
       const totalWordCount = AbCount + IntroCount + AnCount + ConcCount;
       // Display the total word count
       document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
     }
     // Run the function for specific sections and display total count when the page loads
-    window.onload = displayTotalWordCount();
+    window.onload = displayTotalWordCount;
   </script>
   </hr>
   </body>
