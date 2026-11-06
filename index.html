@@ -219,14 +219,14 @@ As explored through the multiple studies, nanotechnology has presented itself as
     // Function to calculate and display total word count from selected sections
     function displayTotalWordCount() {
       // Calculate word count for each section and accumulate the total
-      const AbCount = displayWordCount("Abstract_Text");
-      const IntroCount = displayWordCount("Intro_Text");
-      const AnCount = displayWordCount("Main_Text");
-      const ConcCount = displayWordCount("Conc_Text");
+      const AbCount = displayWordCount('Abstract_Text');
+      const IntroCount = displayWordCount('Intro_Text');
+      const AnCount = displayWordCount('Main_Text');
+      const ConcCount = displayWordCount('Conc_Text');
       // Calculate the sum of all selected sections
       const totalWordCount = AbCount + IntroCount + AnCount + ConcCount;
       // Display the total word count
-      document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+      document.getElementById('totalWordCount').innerText = `Total word count: ${totalWordCount}`;
     }
     // Run the function for specific sections and display total count when the page loads
     window.onload = displayTotalWordCount;
