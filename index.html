@@ -208,7 +208,7 @@ As explored through the multiple studies, nanotechnology has presented itself as
   // Function to calculate and display word count for a specified section
   function displayWordCount(sectionId, outputId) {
     // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
+    const text = document.getElementById('Abstract_Text').textContent;
     // Split text into words based on spaces and filter out any empty strings
     const wordArray = text.trim().split(/\s+/);
     // Count the words
@@ -219,17 +219,18 @@ As explored through the multiple studies, nanotechnology has presented itself as
   // Function to calculate and display total word count from selected sections
   function TotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstrCount = displayWordCount("Abstract_Text");
-    const IntroCount = displayWordCount("Intro_Text");
-    const AnalysisCount = displayWordCount("main_text");
-    const ConcCount = displayWordCount("Conc_Text");
+    const AbstrCount = displayWordCount('Abstract_Text');
+    const IntroCount = displayWordCount('Intro_Text');
+    const AnalysisCount = displayWordCount('main_text');
+    const ConcCount = displayWordCount('Conc_Text');
     // Calculate the sum of all selected sections
     const totalWordCount = AbstrCount + IntroCount + AnalysisCount + ConcCount;
     // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    document.getElementById('totalWordCount').innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = TotalWordCount;
+  window.onload = displayWordCount
 </script>
 </hr>
 </body>
