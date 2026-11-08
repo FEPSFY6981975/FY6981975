@@ -202,7 +202,7 @@ As explored through the multiple studies, nanotechnology has presented itself as
     <!-- ////////////////////////////// Word count function ////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- Placeholder for total word count -->
-<p id="totalWordCount"></p>
+<p id="totalWordCount">
 <hr>
 <script>
   // Function to calculate and display word count for a specified section
@@ -217,7 +217,7 @@ As explored through the multiple studies, nanotechnology has presented itself as
     return wordCount;
   }
   // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
+  function TotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const AbstrCount = displayWordCount("Abstract_Text");
     const IntroCount = displayWordCount("Intro_Text");
@@ -229,8 +229,9 @@ As explored through the multiple studies, nanotechnology has presented itself as
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
+  window.onload = TotalWordCount();
 </script>
+</p>
 </hr>
 </body>
 </html>
