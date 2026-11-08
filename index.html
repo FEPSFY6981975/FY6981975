@@ -61,18 +61,18 @@
   <hr>
     <h2 id="Main_Para_Title"> Main body of the paper </h2>
   </hr>
-<p class="main_text"> <!-- using paragraphs for sep blocks of text so its easier to read on the website. Using class to group them together and make styling easier -->
+<p id="waste_management"> <!-- using paragraphs for sep blocks of text so its easier to read on the website. Using class to group them together and make styling easier -->
   <!-- SUB TITLE: NANOTECH'S EFFECT ON WASTE MANAGEMENT-->
-    Nanotechnology has emerged as an effective and sustainable solution for green waste management (turning everyday organic items into healthy products for the environment e.g. composting rotting food. Definition from:<a href="https://wastecorner.com/green-waste-management/">A Practical Guide To Green Waste Management Solutions</a>). The need for sustainable waste management is rising as the global population increases (maybe put a graph representing the rising population) and urbanisation (increasing size of cities) spreads. Municipal (city/town with a local government) solid waste (MSW) totalled 2.1 billion metric tons in 2023 and this number is projected to increase by 1.7 billion tonnes by 2050. Use of nanocomposites and nanoparticles allowed for targeted, sustainable removal of pollutants. In <b>Dinesh et al.'s 2026</b> study, advances in Nano Engineering were shown to be capable of scalable ecosystem restoration and is a promising new technology. The effects of using nanotech adresses several of the UN’s SDGs: 3 (Good Health & Well-being), 6 (Clean Water & Sanitation), 7 (Affordable & Clean Energy), 9 (Industry, Innovation & Infrastructure) & 13 (climate action).  
+    Nanotechnology has emerged as an effective and sustainable solution for green waste management (turning everyday organic items into healthy products for the environment e.g. composting rotting food. Definition from:<a href="https://wastecorner.com/green-waste-management/">A Practical Guide To Green Waste Management Solutions</a>). The need for sustainable waste management is rising as the global population increases (maybe put a graph representing the rising population) and urbanisation (increasing size of cities) spreads. Municipal (city/town with a local government) solid waste (MSW) totalled 2.1 billion metric tons in 2023 and this number is projected to increase by 1.7 billion tonnes by 2050. Use of nanocomposites and nanoparticles allowed for targeted, sustainable removal of pollutants. In <b>Dinesh et al.'s 2026</b> study, advances in Nano Engineering were shown to be capable of scalable ecosystem restoration and is a promising new technology. The effects of using nanotech adresses several of the UN’s SDGs: <b>3 (Good Health & Well-being)</b>, <b>6 (Clean Water & Sanitation)</b>, <b>7 (Affordable & Clean Energy)</b>, <b>9 (Industry, Innovation & Infrastructure)</b> & <b>13 (climate action)</b>.  
 </p>
-<p class="main_text">
+<p class="agriculture">
    <!-- SUB TITLE: NANOTECH'S EFFECT ON AGRICULTURE-->
   Pest and diseases are a considerable threat to global food security as they impact plant health. Damage from  pests/diseases directly affects how the plant takes in nutrient, as the plant may have trouble photosynthesising and respiring normally. Normally, the plant uses these nutrients to repair its cells and produce edible products which are sold/eaten. Plant disease and pest activity have become more common and extreme due to global warming. This coupled with changing climates across the world means that some areas are facing very poor growing conditions and the plants can no longer cope. This has serious effect on the economies in affected regions (namely Sub-Saharan Africa: Read this site for further information: <a href="https://climatecosmos.com/climate-news/nations-most-at-risk-from-climate-induced-food-shortages">Nations Most at Risk from Climate-Induced Food Shortages | Climate Cosmos</a>) and can lead to a lack of food in that local area, nation and perhaps the world. In <b>Khan et al.'s 2026</b> study, nanomaterials were used to manage some plant diseases as well as detecting plant pathogens. It was found that nanotech provides an effective approach to detecting soil-borne plant diseases.
 </p>
-<p class="main_text"> 
+<p class="agriculture"> 
   Use of nanotech has also opened new opportunities for precision-based agriculture (using tech to optimise crop productions & resource management). <b>Saranyadevi et al's 2025</b> study highlights how nanomaterials & nano-enabled tools transform plant genome (the entire genetic material of an organism: from <a href="https://www.bbc.co.uk/bitesize/guides/zys2v9q/revision/1">BBC Bitesize - What is the genome and what does it do?</a>) editing & environmental genomics (<a href="https://genomicsdb.net/environmental-genomics.html">“a subfield of genomics that studies the genetic makeup and functional responses of microorganisms in their environment”</a>). Scientists are hopeful that the use of nanomaterials will become more sustainable and safer through future innovation. Management of plant diseases and encouragement of crop protection contributes to better crop yields so may improve food security, health and local ecosystems. This contributes towards SDG 2 (zero hunger), 3 (Good Health and Well Being) & 15 (Life on Land).
 </p>
-<p class="main_text">  <!-- SUB TITLE: NANOTECH'S EFFECT ON CONTAMINATED WATER REMEDIATION-->
+<p id="water_treatment">  <!-- SUB TITLE: NANOTECH'S EFFECT ON CONTAMINATED WATER REMEDIATION-->
   The presence of heavy metals in water systems is an increasing and serious global threat to both the environment and public health. <b>Hama et al.'s 2026</b> study discusses the combination of nanotech and bioremediation technologies (?) to combat and reverse this issue. The natural properties of bacteria, fungi & algae allow them to pull out & detoxify metal pollutants in water. Engineered nanomaterials were used, ones that increase microbial viability and metal uptake and bio-nano hybrids which have an exceptionally strong synergism. It was found that the use of this system effectively remediated contaminants to nearly the same extent as conventional systems. The combination of microorganisms & nanoscience provides an environmentally responsible way to remediate contaminated water. This directly contributes towards SDG 6 (clean water & sanitation), 10 (reducing inequality within countries as poorer people have better access to sanitation, clean drinking water etc), 11 (sustainable cities and communities as water treatment is more env. Sustainable so less waste), 12 (responsible consumption & production, as contaminated water is resp. treated) & 14 (life below water, less pollutants reach rivers/oceans which protects aquatic life).
 </p>
 
@@ -139,7 +139,7 @@ As explored through the multiple studies, nanotechnology has presented itself as
       font-family: "Helvetica"
     }
 
-    .main_text {  
+    #waste_management {  
       padding: 10px;
       height: auto;
       width: 100%;
@@ -148,6 +148,26 @@ As explored through the multiple studies, nanotechnology has presented itself as
       word-wrap: break-word;
       font-family: "Helvetica"
     }
+
+    .agriculture {  
+          padding: 10px;
+          height: auto;
+          width: 100%;
+          max-width: 1000px;
+          overflow-wrap: break-word;
+          word-wrap: break-word;
+          font-family: "Helvetica"
+        }
+
+    #water_treatment {  
+          padding: 10px;
+          height: auto;
+          width: 100%;
+          max-width: 1000px;
+          overflow-wrap: break-word;
+          word-wrap: break-word;
+          font-family: "Helvetica"
+        }
 
     #Conclusion_Text {  
       padding: 10px;
