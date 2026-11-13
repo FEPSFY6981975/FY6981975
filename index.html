@@ -305,12 +305,10 @@ As explored through the multiple studies, nanotechnology has presented itself as
    <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- ////////////////////////////// Word count function ////////////////////////////// -->
     <!-- //////////////////////////////////////////////////////////////////////////////// -->
-  <!-- Placeholder for total word count -->
-<p id="totalWordCount"> Word Count </p>
 <hr>
 <script>
   // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId) {
+  function displayWordCount(sectionId, outputId) {
     // Get the text content from the specified section
     const text = document.getElementById(sectionId).textContent;
     // Split text into words based on spaces and filter out any empty strings
@@ -332,7 +330,7 @@ As explored through the multiple studies, nanotechnology has presented itself as
     // Calculate the sum of all selected sections
     const totalWordCount = AbstrCount + IntroCount + WasteManCount + AgriCount + WaterTreatCount +  ConcCount;
     // Display the total word count
-    document.getElementById('totalWordCount').innerText = 'Total word count:$(TotalWordCount)';
+    document.getElementById('totalWordCount').innerText = 'Total word count:$(totalWordCount)';
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = TotalWordCount;
