@@ -36,7 +36,7 @@
  
 <hr>
 <h2 id="Abstract_Title">Abstract</h2>
-<p>
+<p id="abstract_text">
     I set out to discover the link between nanotechnology, the study of extremely small materials and devices operating on a scale of nanometres, and achieving the 17 Sustainable Development Goals set by the United Nations in 2015 to meet by 2030. I looked over findings of other experiments which were investigating the effect of using nanotechnology compared to a standard process e.g. when treating contaminated water. Most of the experiments I read found that nanotechnology, although a new and somewhat unknown technology, provided an effective and more environmentally-friendly alternative to common processes. Although on a small scale, nanotech was already on its way to achieving certain goals such as providing clean water, better sanitation and reducing starvation in local regions. If used on a wider-scale, scientists believe it has a good chance of allowing us to achieve the majority (11 out of 17) of the SDGs. However, it is unlikely to realistically make a big change before 2030, as nanotech is a newer technology and some scientists and citizens are skeptical of side effects it may have for many if used on the global population without rigorous testing. This testing is likely to extend beyond the deadline for the SDGs. Despite this, it can be said that nanotech had a minor role in contributing towards the SDGs in some very local areas where the chosen studies took place.
 </p>
  
@@ -87,10 +87,12 @@
 
  <p id="agriculture3">Another study, conducted by Obayomi et al. states that moving to more sustainable and circular food systems is essential to addressing modern global challenges, such as resource depletion created by high consumption rates driven by our larger/wealthier population. Nanotechnology is a relatively new technology being used that is offering more sustainable and innovative solutions across the food value chain (sequence of coordinated events & stakeholders involved in producing, processing, distributing & delivering food). Nanotech has been used in fertilizers & pesticides, leading to improved nutrient use efficiency whilst reducing the environmental impact due to left over residues. Nanotech usage in packaging & coatings has led to longer shelf life of produce and spoilage detection which in turn has led to reduced postharvest losses. This contributes greatly to <b>SDG 2 (zero hunger)</b>, <b>11 (sustainable cities & communities since there’s less waste being produced)</b>, <b>14 (life below water, as pesticides & fertilizers are less likely to run off the land and contaminate rivers/bays)</b> and <b>15 (life on land, as fertilizers and pesticides wreak less havoc on local plants and soil quality)</b>.</p>
 
-<p class="img_float"><i>Figure 5 - Effects of using nanopesticides compared to chemical pesticides from Obayomi et al 2025's study.</i></p><img src="Obayomi et al. nanopesticides.png"> 
+<div class="side_img">
+<p class="p_fig"><i>Figure 5 - Effects of using nanopesticides compared to chemical pesticides from Obayomi et al 2025's study.</i></p><img class="img_float" src="Obayomi et al. nanopesticides.png"> 
 
-<p class="img_float"><i>Figure 6 - Effect of nanotech usage for agricultural purposes on soil from Obayomi et al 2025's study.</i></p><img src="Obayomi et al. nanotech & soil.png"> 
-  
+<p class="p_fig"><i>Figure 6 - Effect of nanotech usage for agricultural purposes on soil from Obayomi et al 2025's study.</i></p><img class="img_float" src="Obayomi et al. nanotech & soil.png"> 
+</div>
+	
 <h3> Nanotech's effect on contaminated water remediation </h3>
 	
 <p id="water_treatment">
@@ -207,6 +209,12 @@ p_fig {
   		width: 33.33%;
   		padding: 5px;
 	}
+
+	.side_img::after {
+		content: "";
+  		clear: both;
+  		display: table;
+	}
 	
     #Conf_Title {
 		color: #16330f;
@@ -256,7 +264,7 @@ p_fig {
 	    font-weight: bold;
     }
 
-    #Abstract_Text {  
+    #abstract_text {  
 		color: #254f1b;
 		background-color: #f3fff0;
 	    overflow-wrap: break-word;
